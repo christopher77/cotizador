@@ -16,7 +16,12 @@ function FormLogin(){
           <input placeholder="Nro de documento"></input>
         </div>
         <input placeholder="Fecha de nacimiento"></input>
-        <input placeholder="Celular"></input>
+        <div className={style.wrapper}>
+          <div className={style.wrapper__group}>
+            <input className={style.wrapper__input} required/>
+            <label className={style.wrapper__label}>Celular</label>
+          </div>
+        </div>
         <div>
           <input type="checkbox" id="terminos" name="terminos" value="terminos"/>
           <label>Acepto la Politica de Datos Personales y los Términos y Condiciones</label>

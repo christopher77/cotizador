@@ -9,13 +9,18 @@ const Description:FunctionComponent<{children?:ReactNode}>=({children})=>{
       <h1 className={styles.Description__title}>Seguro de <br></br><strong>Salud</strong></h1>
       
       <ul className={styles.Description__list}>
-        <li className={styles.list__item}><img className={styles.icono} src={mobile} alt="uno"/>Cómpralo de maner fácil y rápida</li>
-        <li className={styles.list__item}><img className={styles.icono} src={shield} alt="dos"/>Cotiza y compra tu seguro 100% digital</li>
-        <li className={styles.list__item}><img className={styles.icono} src={mobile} alt="tres"/>Hasta S/.12 millones de cobertura anual</li>
-        <li className={styles.list__item}><img className={styles.icono} src={shield}alt="cuatro"/>Más de 300 clínicas en todo el Perú</li>
+        <li className={styles.list__item}><img className={styles.icono} src={mobile} alt="uno"/><span>
+          Cómpralo de maner fácil y rápida
+          </span>
+          </li>
+        <li className={styles.list__item}><img className={styles.icono} src={shield} alt="dos"/><span>Cotiza y compra tu seguro 100% digital</span></li>
+        <li className={styles.list__item}><img className={styles.icono} src={mobile} alt="tres"/><span>Hasta S/.12 millones de cobertura anual</span></li>
+        <li className={styles.list__item}><img className={styles.icono} src={shield}alt="cuatro"/><span>Más de 300 clínicas en todo el Perú</span></li>
       </ul>
       <div className={styles.footer}>
-        c 2020 RIMAC Seguros y Reaseguros.
+        <p>
+        &copy; 2021 RIMAC Seguros y Reaseguros.
+        </p>
       </div>
   </div>);
 };
