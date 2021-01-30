@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 // import { Router } from "@reach/router";
 import './App.css';
-import Description from './components/Description';
+// import Description from './components/Description/Description';
 import Login from './views/Login';
 
 function App():JSX.Element {
 
-  const [some,setSome] =useState<string>('');
+  // const [some,setSome] =useState<string>('');
 
   return (<Login/>
   );

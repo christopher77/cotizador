@@ -1,0 +1,39 @@
+.Description {
+	background-image: url(../../images/Base.png);
+	// background-size: cover;
+	color: #fff;
+	height: 80vh;
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+	padding-left: 3rem;
+	justify-content: center;
+
+	&__title {
+		font-size: 3.2rem;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: lighter;
+	}
+
+	&__list {
+		list-style: none;
+		font-size: 1.2rem;
+		margin: 0px;
+		padding: 0px;
+	}
+}
+
+.icono {
+	height: 1rem;
+}
+
+.footer {
+	position: relative;
+	// margin-bottom: -10px;
+	height: 2rem;
+	text-align: left;
+}
+
+.list__item {
+	padding-top: 10px;
+}
