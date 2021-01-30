@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 // import { Router } from "@reach/router";
 import './App.css';
-// import Description from './components/Description/Description';
 import Login from './views/Login';
+import Success from './views/Success';
 
 function App():JSX.Element {
 
-  // const [some,setSome] =useState<string>('');
 
-  return (<Login/>
+  return (
+  // <Login/>
+  <Success></Success>
   );
 }
 

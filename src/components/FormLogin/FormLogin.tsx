@@ -5,15 +5,18 @@ import style from "./FormLogin.module.scss";
 const FormLogin: React.FC = () => {
 	const propsDNI = {
 		nombre: "Nro de documento",
-		tipo: "string",
+		tipo: "number",
 		max: 8,
-		width: 300,
+  };
+  const propsFecha = {
+		nombre: "Fecha de nacimiento",
+		tipo: "string",
+		max: 10,
   };
   const propsCelular = {
 		nombre: "Celular",
 		tipo: "string",
 		max: 9,
-		width: 300,
 	};
 	return (
 		<div className={style.info__user}>
@@ -23,17 +26,17 @@ const FormLogin: React.FC = () => {
 				</h2>
 				<p>Ingresa los datos para comenzar</p>
 			</div>
-			<div>
-				<select name="document" id="document">
+			<div className={style.prueba}>
+				<select className={style.prueba__select} name="document" id="document">
 					<option value="dni">DNI</option>
 					<option value="passport">PASSPORT</option>
 					<option value="other">OTHER</option>
 				</select>
 				<SimpleInput {...propsDNI} />
 			</div>
-			{/* <SimpleInput
-      name={"Fecha de nacimiento"}
-      />*/}
+			<SimpleInput
+      {...propsFecha}
+      />
       <SimpleInput {...propsCelular} /> 
 			<div className={style.terms__container}>
 				<input type="checkbox" id="terminos" name="terminos" value="terminos" />

@@ -19,14 +19,18 @@ const defaultProps={
 	return (
 		<div className={style.wrapper}>
 			<div className={style.wrapper__group}>
-				<input className={style.wrapper__input} required max={props.max} type={props.tipo}/>
+        {props.tipo==="string"?
+        <input className={style.wrapper__input} required maxLength={props.max} type={props.tipo}/>:
+        <input className={style.wrapper__input} required max={props.max} type={props.tipo}/>
+        }
+        
 				<label className={style.wrapper__label}>{props.nombre}</label>
 			</div>
 		</div>
 	);
   }
 
-// SimpleInput.defaultProps = defaultProps;
+SimpleInput.defaultProps = defaultProps;
 
 export default SimpleInput;
 
