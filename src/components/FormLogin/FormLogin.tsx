@@ -1,38 +1,60 @@
-import React from "react"
+import React from "react";
+import SimpleInput from "../SimpleInput/SimpleInput";
 import style from "./FormLogin.module.scss";
 
-function FormLogin(){
-
-  return(
-    <div className={style.user__info}>
-        <h2>Obtén tu seguro ahora</h2>
-        <p>Ingresa los datos para comenzar</p>
-        <div>
-          <select name="document" id="document">
-            <option value="dni">DNI</option>
-            <option value="passport">PASSPORT</option>
-            <option value="other">OTHER</option>
-          </select>
-          <input placeholder="Nro de documento"></input>
-        </div>
-        <input placeholder="Fecha de nacimiento"></input>
-        <div className={style.wrapper}>
-          <div className={style.wrapper__group}>
-            <input className={style.wrapper__input} required/>
-            <label className={style.wrapper__label}>Celular</label>
-          </div>
-        </div>
-        <div>
-          <input type="checkbox" id="terminos" name="terminos" value="terminos"/>
-          <label>Acepto la Politica de Datos Personales y los Términos y Condiciones</label>
-        </div>
-        <div>
-          <input type="checkbox" id="comunicaciones" name="comunicaciones" value="comunicaciones"/>
-          <label>Acepto la Politica de Envio de Comunicaciones Comerciales</label>
-        </div>
-        <button>COMENCEMOS</button>
-      </div>
-  )
-}
+const FormLogin: React.FC = () => {
+	const propsDNI = {
+		nombre: "Nro de documento",
+		tipo: "string",
+		max: 8,
+		width: 300,
+  };
+  const propsCelular = {
+		nombre: "Celular",
+		tipo: "string",
+		max: 9,
+		width: 300,
+	};
+	return (
+		<div className={style.info__user}>
+			<div className={style.info__title}>
+				<h2 className={style.title}>
+					Obtén tu <span className={style.darker}>seguro ahora</span>
+				</h2>
+				<p>Ingresa los datos para comenzar</p>
+			</div>
+			<div>
+				<select name="document" id="document">
+					<option value="dni">DNI</option>
+					<option value="passport">PASSPORT</option>
+					<option value="other">OTHER</option>
+				</select>
+				<SimpleInput {...propsDNI} />
+			</div>
+			{/* <SimpleInput
+      name={"Fecha de nacimiento"}
+      />*/}
+      <SimpleInput {...propsCelular} /> 
+			<div className={style.terms__container}>
+				<input type="checkbox" id="terminos" name="terminos" value="terminos" />
+				<label className={style.terms}>
+					Acepto la <a href="#">Politica de Datos Personales y los Términos y Condiciones</a>
+				</label>
+			</div>
+			<div className={style.terms__container}>
+				<input
+					type="checkbox"
+					id="comunicaciones"
+					name="comunicaciones"
+					value="comunicaciones"
+				/>
+				<label className={style.terms}>
+					Acepto la	<a href="#"> Politica de Envio de Comunicaciones Comerciales</a>
+				</label>
+			</div>
+			<button className={style.start__button}>COMENCEMOS</button>
+		</div>
+	);
+};
 
 export default FormLogin;

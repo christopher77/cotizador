@@ -1,0 +1,38 @@
+.wrapper {
+	width: 300px;
+	background: #fff;
+	padding: 15px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	margin-bottom: 1.5rem;
+
+	&__group {
+		height: 40px;
+		width: 100%;
+		position: relative;
+	}
+
+	&__input {
+		height: 100%;
+		width: 100%;
+		border-style: none;
+		font-size: 17px;
+		outline: none;
+	}
+
+	&__input:focus ~ label,
+	&__input:valid ~ label {
+		transform: translateY(-20px);
+		font-size: 15px;
+		padding-bottom: 7px;
+	}
+
+	&__label {
+		position: absolute;
+		bottom: 5px;
+		left: 0;
+		color: grey;
+		pointer-events: none;
+		transition: all 0.3s ease;
+		font-size: 20px;
+	}
+}

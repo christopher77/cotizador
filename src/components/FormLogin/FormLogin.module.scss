@@ -1,62 +1,45 @@
-.user__info {
+.info__user {
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
 	margin: 20px;
 	justify-content: center;
-	width: 20vw;
+	width: 25vw;
+	font-weight: lighter;
 }
 
-// .InputBox {
-// 	border-style: solid;
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: center;
-// 	border-radius: 100px;
+.info__title {
+	margin-bottom: 2rem;
+}
+.title {
+	font-size: 1.8rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+}
 
-// 	&__value {
-// 		border: none;
+.darker {
+	font-weight: bold;
+	color: #1e90ff;
+}
+.start__button {
+	height: 50px;
+	width: 180px;
+	border-radius: 10px;
+	color: #fff;
+	background-color: #1e90ff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin-top: 2rem;
+}
+.terms__container {
+	display: flex;
+	font-size: 0.8rem;
+	margin-bottom: 1.5rem;
+	width: 20vw;
+	text-align: left;
+}
 
-// 		&__hover {
-// 			border-style: none;
-// 		}
-// 	}
-// }
-
-.wrapper {
-	width: 300px;
-	background: #fff;
-	padding: 15px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-
-	&__group {
-		height: 40px;
-		width: 100%;
-		position: relative;
-	}
-
-	&__input {
-		height: 100%;
-		width: 100%;
-		border-style: none;
-		font-size: 17px;
-		outline: none;
-	}
-
-	&__input:focus ~ label,
-	&__input:valid ~ label {
-		transform: translateY(-20px);
-		font-size: 15px;
-		padding-bottom: 7px;
-	}
-
-	&__label {
-		position: absolute;
-		bottom: 5px;
-		left: 0;
-		color: grey;
-		pointer-events: none;
-		transition: all 0.3s ease;
-		font-size: 20px;
-	}
+.terms {
+	margin-left: 0.5rem;
 }
