@@ -5,7 +5,7 @@ import FormLogin from "../../components/FormLogin/FormLogin";
 import style from "./Login.module.scss";
 
 
-const baseUrl = "https://freestyle.getsandbox.com/dummy/obtenerdatospersona";
+// const baseUrl = "https://freestyle.getsandbox.com/dummy/obtenerdatospersona";
 
 function Login(){
 
