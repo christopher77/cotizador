@@ -1,8 +1,9 @@
+import { navigate } from "@reach/router";
 import React from "react"
 import SimpleInput from "../../components/SimpleInput/SimpleInput";
 import style from "./AddInsure.module.scss";
 
-function AddInsure(){
+const AddInsure: React.FC= () => {
   const propsDNI = {
 		nombre: "Nro de documento",
 		tipo: "number",
@@ -28,6 +29,7 @@ function AddInsure(){
 		tipo: "string",
 		max: 10,
   };
+
   return(
   <div className={style.container}>
     <div className={style.container__left}></div>
@@ -66,7 +68,7 @@ function AddInsure(){
           <input type="radio" name="female" /><label>A mi y a mi familia</label>
         </div>
       </form>
-      <button className={style.button__continue}>CONTINUAR</button>
+      <button className={style.button__continue} onClick={()=>navigate("/plan")}>CONTINUAR</button>
     </div>
   </div>)
 }

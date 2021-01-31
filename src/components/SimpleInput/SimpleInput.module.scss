@@ -1,6 +1,7 @@
 $small: 10vw;
 $normal: 22vw;
 $large: 30vw;
+$light-grey: #d5dbde;
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -12,8 +13,9 @@ input[type="number"]::-webkit-inner-spin-button {
 	background: #fff;
 	padding: 15px;
 	border-style: solid;
-	border-color: #f4f7f9;
-	margin-bottom: 1.5rem;
+	border-color: $light-grey;
+	margin-bottom: 0.8rem;
+	border-radius: 10px;
 
 	&__group {
 		height: 30px;

@@ -1,16 +1,18 @@
+$light-grey: #ebf1f5;
+
 .benefits {
 	display: flex;
 	flex-direction: column;
 	border-style: solid;
-	border-color: #f4f7f9;
+	border-color: $light-grey;
 	width: 30vw;
-	margin-top: 2vh;
+	margin-top: 5vh;
 	border-radius: 10px;
 
 	&__title {
 		font-size: 1rem;
 		font-family: Arial, Helvetica, sans-serif;
-		background-color: #f4f7f9;
+		background-color: $light-grey;
 		height: 2.5rem;
 		display: flex;
 		justify-content: center;

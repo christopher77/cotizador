@@ -2,6 +2,7 @@ import React from "react"
 import style from "./ChosePlan.module.scss";
 import PlanCollection from "../../components/PlanCollection/PlanCollection";
 import BenefitsChart from "../../components/BenefitsChart/BenefitsChart";
+import { navigate } from "@reach/router";
 
 function ChosePlan(){
   return(
@@ -22,7 +23,7 @@ function ChosePlan(){
         <div className={style.footer__link}><a className={style.footer__link_route} href="#">
           ENVIAR COTIZACION POR CORREO
           </a></div>
-        <button className={style.footer__button}>COMPRAR PLAN</button>
+        <button className={style.footer__button} onClick={()=>navigate("/success")}>COMPRAR PLAN</button>
       </div>
     </div>
   </div>

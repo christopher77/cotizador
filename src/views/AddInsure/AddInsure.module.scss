@@ -1,10 +1,12 @@
+$light-grey: #ebf1f5;
+
 .container {
 	display: flex;
 	height: 100vh;
 	width: 100vw;
 	background-image: url(../../images/Illustration-1.png);
-	background-position-x: 15vw;
-	background-position-y: 5vw;
+	background-position-x: 14vw;
+	background-position-y: 1vh;
 	background-repeat: no-repeat;
 	z-index: 1;
 }
@@ -12,7 +14,7 @@
 .container__left {
 	background-image: url(../../images/Base.png);
 	width: 30vw;
-	height: 65vh;
+	height: 85vh;
 	background-size: cover;
 	background-position: bottom;
 	z-index: -1;
@@ -45,7 +47,7 @@
 			outline: none;
 			background: #fff;
 			border-style: solid;
-			border-color: #f4f7f9;
+			border-color: $light-grey;
 			margin-bottom: 1.5rem;
 		}
 	}
@@ -62,7 +64,7 @@
 }
 
 .button__continue {
-	height: 50px;
+	height: 30vh;
 	width: 180px;
 	border-radius: 10px;
 	color: #fff;
@@ -72,4 +74,6 @@
 	cursor: pointer;
 	margin-top: 2rem;
 	align-self: flex-end;
+	padding: 1rem;
+	margin-bottom: 7vh;
 }

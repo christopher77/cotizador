@@ -1,3 +1,4 @@
+import { navigate } from "@reach/router";
 import React from "react"
 import style from "./Success.module.scss";
 
@@ -14,7 +15,7 @@ function Success() {
           <p className={style.message__p}>Queremos conocer mejor la salud de los asegurados.
           Un asesor se pondrá en contacto contigo en las siguientes 48 horas</p>
         
-        <button className={style.message__button}>IR A SALUD</button>
+        <button className={style.message__button} onClick={()=>navigate("/")}>IR A SALUD</button>
       </div>
     </div>);
 }

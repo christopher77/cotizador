@@ -15,7 +15,7 @@ const Description:FunctionComponent<{children?:ReactNode}>=({children})=>{
           </li>
         <li className={styles.list__item}><img className={styles.icono} src={mobile} alt="cotiza"/><span>Cotiza y compra tu seguro 100% digital</span></li>
         <li className={styles.list__item}><img className={styles.icono} src={mobile} alt="cobertura"/><span>Hasta S/.12 millones de cobertura anual</span></li>
-        <li className={styles.list__item}><img className={styles.icono} src={shield}alt="clinicas"/><span>Más de 300 clínicas en todo el Perú</span></li>
+        <li className={styles.list__item}><img className={styles.icono} src={shield} alt="clinicas"/><span>Más de 300 clínicas en todo el Perú</span></li>
       </ul>
       <div className={styles.footer}>
         <p>

@@ -1,3 +1,5 @@
+$light-grey: #ebf1f5;
+
 .icono {
 	height: 1rem;
 	margin: 0;
@@ -7,10 +9,12 @@
 	display: flex;
 	flex-direction: column;
 	border-style: solid;
-	border-color: #f4f7f9;
+	border-color: $light-grey;
 	border-radius: 10px;
-	width: 6vw;
+	width: 7vw;
 	margin-top: 2vh;
+	margin-right: 0.3vw;
+	height: 14vh;
 
 	&__img {
 		align-self: flex-end;
@@ -26,7 +30,11 @@
 		margin-top: 0;
 
 		&__price {
-			font-size: 1.3rem;
+			font-size: 1.5rem;
+
+			&_sol {
+				font-size: 0.8rem;
+			}
 		}
 	}
 }
