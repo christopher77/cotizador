@@ -19,7 +19,7 @@ const FormLogin: React.FC<myProps> = (props) => {
 	};
 	const propsCelular = {
 		nombre: "Celular",
-		tipo: "string",
+		tipo: "number",
 		max: 9,
 	};
 	return (
