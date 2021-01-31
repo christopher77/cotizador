@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-// import { Router } from "@reach/router";
+import React from 'react';
 import './App.css';
 import AddInsure from './views/AddInsure/AddInsure';
 import ChosePlan from './views/ChosePlan/ChosePlan';
@@ -11,7 +10,7 @@ function App():JSX.Element {
 
   return (
   // <Login/>
-  // <Success></Success>
+  // <Success/>
   // <AddInsure/>
   <ChosePlan/>
   );

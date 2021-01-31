@@ -2,15 +2,15 @@
 	display: flex;
 	height: 100vh;
 	width: 100vw;
-	background-image: url(../../src/images/Illustration-1.png);
+	background-image: url(../../images/Illustration-1.png);
 	background-position-x: 15vw;
 	background-position-y: 17vw;
 	background-repeat: no-repeat;
 	z-index: 1;
 }
 
-.container__blue {
-	background-image: url(../images/Base.png);
+.container__left {
+	background-image: url(../../images/Base.png);
 	width: 30vw;
 	height: 100vh;
 	background-size: cover;
@@ -36,6 +36,10 @@
 		color: #1e90ff;
 	}
 
+	&__p {
+		text-align: justify;
+	}
+
 	&__button {
 		height: 50px;
 		width: 180px;
@@ -47,9 +51,5 @@
 		cursor: pointer;
 		margin-top: 2rem;
 		align-self: flex-end;
-	}
-
-	&__p {
-		text-align: justify;
 	}
 }

@@ -30,13 +30,14 @@ function AddInsure(){
   };
   return(
   <div className={style.container}>
-    <div className={style.container__blue}></div>
-    <div className={style.info__insured}>
-      <div className={style.info__title}>Hola, <span className={style.info__blue}>Max</span></div>
+    <div className={style.container__left}></div>
+    <div className={style.container__right}>
+      <div className={style.container__right_title}>Hola, <span 
+      className={style.container__right_title_blue}>Max</span></div>
       <p>Valida que los datos sean correctos.</p>
       <p>Datos personales del titular</p>
-      <div className={style.prueba}>
-				<select className={style.prueba__select} name="document" id="document">
+      <div className={style.container__right_doc}>
+				<select className={style.container__right_doc_select} name="document" id="document">
 					<option value="dni">DNI</option>
 					<option value="passport">PASSPORT</option>
 					<option value="other">OTHER</option>
