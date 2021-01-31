@@ -2,7 +2,12 @@ import React from "react";
 import SimpleInput from "../SimpleInput/SimpleInput";
 import style from "./FormLogin.module.scss";
 
-const FormLogin: React.FC = () => {
+interface myProps{
+	onClick:()=>void;
+}
+
+
+const FormLogin: React.FC <myProps>= (props) => {
 	const propsDNI = {
 		nombre: "Nro de documento",
 		tipo: "number",
@@ -55,7 +60,7 @@ const FormLogin: React.FC = () => {
 					Acepto la	<a href="#"> Politica de Envio de Comunicaciones Comerciales</a>
 				</label>
 			</div>
-			<button className={style.start__button}>COMENCEMOS</button>
+			<button className={style.start__button} onClick={props.onClick}>COMENCEMOS</button>
 		</div>
 	);
 };
