@@ -20,8 +20,8 @@ const defaultProps={
 		<div className={style.wrapper}>
 			<div className={style.wrapper__group}>
         {props.tipo==="string"?
-        <input className={style.wrapper__input} required maxLength={props.max} type={props.tipo}/>:
-        <input className={style.wrapper__input} required max={props.max} type={props.tipo}/>
+        <input className={style.wrapper__input}  maxLength={props.max} type={props.tipo} required/>:
+        <input className={style.wrapper__input}  max={props.max} type={props.tipo} required/>
         }
         
 				<label className={style.wrapper__label}>{props.nombre}</label>
