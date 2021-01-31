@@ -71,7 +71,3 @@ function AddInsure(){
 }
 
 export default AddInsure;
-
-
-{/* <div className={style.container}>
-<div className={style.container__blue}></div> */}
