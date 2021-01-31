@@ -13,7 +13,7 @@ const BenefitsChart: React.FC = () => {
 					<div className={style.benefits__coverage__price__button}>PLAN BÁSICO</div>
 				</div>
 				<div className={style.benefits__coverage__logo}>
-					<img className={style.benefits__coverage__logo__source} src={logo}></img>
+					<img className={style.benefits__coverage__logo__source} src={logo} alt="logo"></img>
 				</div>
 			</div>
 			<div className={style.benefits__details}>

@@ -2,60 +2,80 @@ import React from "react";
 import SimpleInput from "../SimpleInput/SimpleInput";
 import style from "./FormLogin.module.scss";
 
-const FormLogin: React.FC = () => {
+interface myProps {
+	onClick: () => void;
+}
+
+const FormLogin: React.FC<myProps> = (props) => {
 	const propsDNI = {
 		nombre: "Nro de documento",
 		tipo: "number",
 		max: 8,
-  };
-  const propsFecha = {
+	};
+	const propsFecha = {
 		nombre: "Fecha de nacimiento",
 		tipo: "string",
 		max: 10,
-  };
-  const propsCelular = {
+	};
+	const propsCelular = {
 		nombre: "Celular",
 		tipo: "string",
 		max: 9,
 	};
 	return (
-		<div className={style.info__user}>
-			<div className={style.info__title}>
-				<h2 className={style.title}>
-					Obtén tu <span className={style.darker}>seguro ahora</span>
+		<div className={style.login}>
+			<div className={style.login__title}>
+				<h2 className={style.login__title_normal}>
+					Obtén tu{" "}
+					<span className={style.login__title_darker}>seguro ahora</span>
 				</h2>
 				<p>Ingresa los datos para comenzar</p>
 			</div>
-			<div className={style.prueba}>
-				<select className={style.prueba__select} name="document" id="document">
+			<div className={style.identification}>
+				<select
+					className={style.identification__select}
+					name="document"
+					id="document"
+				>
 					<option value="dni">DNI</option>
 					<option value="passport">PASSPORT</option>
 					<option value="other">OTHER</option>
 				</select>
 				<SimpleInput {...propsDNI} />
 			</div>
-			<SimpleInput
-      {...propsFecha}
-      />
-      <SimpleInput {...propsCelular} /> 
+			<SimpleInput {...propsFecha} />
+			<SimpleInput {...propsCelular} />
 			<div className={style.terms__container}>
-				<input type="checkbox" id="terminos" name="terminos" value="terminos" />
-				<label className={style.terms}>
-					Acepto la <a href="#">Politica de Datos Personales y los Términos y Condiciones</a>
+				<input
+					className={style.terms__container__check}
+					type="checkbox"
+					id="terminos"
+					name="terminos"
+					value="terminos"
+				/>
+				<label className={style.terms__container__label}>
+					Acepto la{" "}
+					<a href="#">
+						Politica de Datos Personales y los Términos y Condiciones
+					</a>
 				</label>
 			</div>
 			<div className={style.terms__container}>
 				<input
+					className={style.terms__container__check}
 					type="checkbox"
 					id="comunicaciones"
 					name="comunicaciones"
 					value="comunicaciones"
 				/>
-				<label className={style.terms}>
-					Acepto la	<a href="#"> Politica de Envio de Comunicaciones Comerciales</a>
+				<label className={style.terms__container__label}>
+					Acepto la{" "}
+					<a href="#"> Politica de Envio de Comunicaciones Comerciales</a>
 				</label>
 			</div>
-			<button className={style.start__button}>COMENCEMOS</button>
+			<button className={style.start__button} onClick={props.onClick}>
+				COMENCEMOS
+			</button>
 		</div>
 	);
 };
