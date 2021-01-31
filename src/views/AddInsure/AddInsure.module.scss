@@ -1,0 +1,73 @@
+.container {
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	background-image: url(../../images/Illustration-1.png);
+	background-position-x: 15vw;
+	background-position-y: 5vw;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.container__blue {
+	background-image: url(../../images/Base.png);
+	width: 30vw;
+	height: 65vh;
+	background-size: cover;
+	background-position: bottom;
+	z-index: -1;
+}
+
+.info__insured {
+	display: flex;
+	flex-direction: column;
+	margin-left: 25vw;
+	width: 30vw;
+	padding-top: 5vh;
+}
+
+.info__title {
+	font-size: 3rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.info__blue {
+	font-weight: bold;
+	color: #1e90ff;
+}
+
+.prueba {
+	display: flex;
+
+	&__select {
+		width: 6vw;
+		border-style: none;
+		font-size: 1rem;
+		outline: none;
+		background: #fff;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		margin-bottom: 1.5rem;
+	}
+}
+
+.button__continue {
+	height: 50px;
+	width: 180px;
+	border-radius: 10px;
+	color: #fff;
+	background-color: #1e90ff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin-top: 2rem;
+	align-self: flex-end;
+}
+
+.radios {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+
+	&__item {
+		margin-top: 1rem;
+	}
+}

@@ -1,6 +1,6 @@
-$small: 200px;
-$normal: 300px;
-$large: 400px;
+$small: 10vw;
+$normal: 22vw;
+$large: 30vw;
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -15,7 +15,7 @@ input[type="number"]::-webkit-inner-spin-button {
 	margin-bottom: 1.5rem;
 
 	&__group {
-		height: 40px;
+		height: 30px;
 		width: 100%;
 		position: relative;
 	}
@@ -31,8 +31,8 @@ input[type="number"]::-webkit-inner-spin-button {
 	&__input:focus ~ label,
 	&__input:valid ~ label {
 		transform: translateY(-20px);
-		font-size: 15px;
-		padding-bottom: 7px;
+		font-size: 12px;
+		padding-bottom: 3px;
 	}
 
 	&__label {

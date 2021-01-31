@@ -9,13 +9,13 @@ const Description:FunctionComponent<{children?:ReactNode}>=({children})=>{
       <h1 className={styles.Description__title}>Seguro de <br></br><strong>Salud</strong></h1>
       
       <ul className={styles.Description__list}>
-        <li className={styles.list__item}><img className={styles.icono} src={shield} alt="uno"/><span>
+        <li className={styles.list__item}><img className={styles.icono} src={shield} alt="compra"/><span>
           Cómpralo de maner fácil y rápida
           </span>
           </li>
-        <li className={styles.list__item}><img className={styles.icono} src={mobile} alt="dos"/><span>Cotiza y compra tu seguro 100% digital</span></li>
-        <li className={styles.list__item}><img className={styles.icono} src={mobile} alt="tres"/><span>Hasta S/.12 millones de cobertura anual</span></li>
-        <li className={styles.list__item}><img className={styles.icono} src={shield}alt="cuatro"/><span>Más de 300 clínicas en todo el Perú</span></li>
+        <li className={styles.list__item}><img className={styles.icono} src={mobile} alt="cotiza"/><span>Cotiza y compra tu seguro 100% digital</span></li>
+        <li className={styles.list__item}><img className={styles.icono} src={mobile} alt="cobertura"/><span>Hasta S/.12 millones de cobertura anual</span></li>
+        <li className={styles.list__item}><img className={styles.icono} src={shield}alt="clinicas"/><span>Más de 300 clínicas en todo el Perú</span></li>
       </ul>
       <div className={styles.footer}>
         <p>

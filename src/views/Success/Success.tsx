@@ -5,9 +5,9 @@ function Success() {
 
   return (
     <div className={style.container}>
-      <div className={style.container__blue}></div>
+      <div className={style.container__blue}/>
       <div className={style.message}>
-        <div className={style.message__title}>¡Gracias por <span className={style.message__bluer}>
+        <div className={style.message__title}>¡Gracias por <span className={style.message__blue}>
           confiar en nosotros!
           </span>
         </div>
